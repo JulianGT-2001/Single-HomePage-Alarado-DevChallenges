@@ -29,7 +29,7 @@ body {
 .header {
     width: 100%;
     height: 4rem;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 100px;
 }
@@ -111,6 +111,8 @@ body {
     height: 100%;
     display: grid;
     grid-template-rows: 30px 260px 130px 60px 30px;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .main__article__slogan {
@@ -214,11 +216,100 @@ body {
     right: 5px;
 }
 
-
-
 .main__aside {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
+    grid-column: 2;
+    grid-row: 1
 }
+
+ @media (width >= 1024px) and (width < 1280px) {
+    .main {
+        grid-template-columns: 100%;
+        grid-template-rows: 650px 650px;
+    }
+
+    .main__aside {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .main__article {
+        padding-left: 80px;
+        grid-template-rows: 30px 160px 130px 60px 30px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .main__article__title {
+        width: 750px;
+    }
+ }
+
+ @media (width >= 640px) and (width < 1024px) {
+    .main {
+        grid-template-columns: 100%;
+        grid-template-rows: 650px 650px;
+    }
+
+    .main__aside {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .main__article {
+        padding-left: 80px;
+        grid-template-rows: 30px 270px 130px 60px 30px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .main__article__title {
+        width: 450px;
+    }
+
+    .main__article__description {
+        margin-top: 30px;
+    }
+
+    .header__nav__menu {
+        display: none;
+    }
+
+    .header__nav__dark-button {
+        display: none;
+    }
+ }
+
+ @media (width < 640px) {
+    .main {
+        grid-template-columns: 100%;
+        grid-template-rows: 650px 650px;
+    }
+
+    .main__aside {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .main__article {
+        padding-left: 80px;
+        grid-template-rows: 30px 270px 130px 60px 30px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .main__article__title {
+        width: 450px;
+    }
+
+    .header__nav__menu {
+        display: none;
+    }
+
+    .header__nav__dark-button {
+        display: none;
+    }
+ }
