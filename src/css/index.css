@@ -10,14 +10,9 @@ a {
     color: inherit;
 }
 
-html {
-    width: 100%;
-    height: 100%;
-}
-
 body {
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     background-color: #F2F9FE;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -39,6 +34,7 @@ body {
     height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 30px 0px 10px 0px;
 }
 
@@ -93,6 +89,12 @@ body {
 .header__nav__dark-button--sun--inactive {
     background-color: #223344;
     border-color: #223344;
+    cursor: pointer;
+}
+
+.header__nav__list-icon {
+    display: none;
+    font-size: 25px;
     cursor: pointer;
 }
 
@@ -216,7 +218,7 @@ body {
     right: 5px;
 }
 
-.main__aside {
+.main__article--image {
     width: 100%;
     height: 100%;
     display: flex;
@@ -225,13 +227,111 @@ body {
     grid-row: 1
 }
 
+.aside__menu {
+    min-width: 400px;
+    min-height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background-color: #FFFFFF;
+    padding: 15px 0px 0 100px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.aside__close {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+
+.aside__close > i {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #223344;
+    cursor: pointer;
+}
+
+.aside__menu--options {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    list-style: none;
+    font-size: 60px;
+    font-weight: 600;
+    color: #223344;
+    margin-top: 50px;
+    padding-right: 100px;
+}
+
+.aside__menu--options__li {
+    color: #909193;
+}
+
+.aside__menu--dark-button-container {
+    width: 100%;
+    height: 25px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.aside__menu--dark-button-container__dark-button {
+    width: 45px;
+    height: 24px;
+    background-color: #223344;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.aside__menu--dark-button-container__dark-button > button {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border-style: solid;
+}
+
+.aside__menu--dark-button-container__dark-button--moon {
+    background-color: #223344;
+    border-color: #223344;
+    cursor: pointer;
+}
+
+.aside__menu--dark-button-container__dark-button--moon--active {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.aside__menu--dark-button-container__dark-button--sun {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.aside__menu--dark-button-container__dark-button--sun--inactive {
+    background-color: #223344;
+    border-color: #223344;
+    cursor: pointer;
+}
+
  @media (width >= 1024px) and (width < 1280px) {
     .main {
         grid-template-columns: 100%;
         grid-template-rows: 650px 650px;
     }
 
-    .main__aside {
+    .main__article--image {
         grid-column: 1;
         grid-row: 1;
     }
@@ -249,12 +349,16 @@ body {
  }
 
  @media (width >= 640px) and (width < 1024px) {
+    body {
+        padding: 0;
+    }
+
     .main {
         grid-template-columns: 100%;
         grid-template-rows: 650px 650px;
     }
 
-    .main__aside {
+    .main__article--image {
         grid-column: 1;
         grid-row: 1;
     }
@@ -281,15 +385,23 @@ body {
     .header__nav__dark-button {
         display: none;
     }
+
+    .header__nav__list-icon {
+        display: block;
+    }
  }
 
  @media (width < 640px) {
+    body {
+        padding: 0;
+    }
+
     .main {
         grid-template-columns: 100%;
         grid-template-rows: 650px 650px;
     }
 
-    .main__aside {
+    .main__article--image {
         grid-column: 1;
         grid-row: 1;
     }
@@ -311,5 +423,9 @@ body {
 
     .header__nav__dark-button {
         display: none;
+    }
+
+    .header__nav__list-icon {
+        display: block;
     }
  }
