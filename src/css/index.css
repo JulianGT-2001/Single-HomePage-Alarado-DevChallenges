@@ -228,17 +228,18 @@ body {
 }
 
 .aside__menu {
-    min-width: 400px;
-    min-height: 100vh;
+    width: 0;
+    height: 100%;
     position: fixed;
     right: 0;
     top: 0;
     z-index: 10;
     background-color: #FFFFFF;
-    padding: 15px 0px 0 100px;
+    /* padding: 15px 0px 0 100px; */
     display: flex;
     flex-direction: column;
-    display: none;
+    transition: 0.3s;
+    overflow-x: hidden;
 }
 
 .aside__close {
