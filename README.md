@@ -22,6 +22,8 @@ El reto podrás encontrarlo con mayor detalle en [DevChallenges.io/challenge/sim
 
 ## Previsualizacion
 
+![screenshot](https://github.com/JulianGT-2001/Single-HomePage-Alarado-DevChallenges/blob/main/src/img/Single_HomePage_Alarado_Preview.png)
+
 ## Contacto
 
 - GitHub [@JulianGT-2001](https://github.com/JulianGT-2001)
