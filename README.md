@@ -6,6 +6,8 @@ En este repositorio podrás encontrar el código fuente de el Single Homepage - 
 
 Está página fue construida con ayuda del diseño que provee [DevChallenges.io](https://devchallenges.io/), la mejor plataforma para poner en práctica tus conocimientos acerca del mundo del desarrollo y fortalecerlos programando.
 
+Puedes visualizar la demo del diseño [aquí](https://juliangt-2001.github.io/Single-HomePage-Alarado-DevChallenges/)
+
 Se trata de una página con un diseño minimalista en la que podemos observar el logo de Alarado en la parte superior izquierda seguido de un menú que enseña las distintas páginas. En la parte superior izquierda encontramos el botón del darkmode en el que podremos cambiar el color de la página a un diseño con tonos oscuros.
 
 En la parte central podemos encontrar una imagen que nos provee la plataforma junto con un slogan, un titulo y una descripción adaptados también con la paleta de colores que nos provee la plataforma, seguido de unos botones estilizados y por ultimo podemos visualizar unas recomendaciones.
